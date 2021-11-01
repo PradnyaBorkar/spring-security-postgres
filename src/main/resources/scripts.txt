@@ -1,0 +1,15 @@
+create table users (
+    id int not null primary key,
+    user_name varchar (50) not null,
+    password varchar (500) not null,
+    active boolean,
+    roles varchar (50) not null
+);
+---- data
+
+INSERT INTO users (id,user_name, password, active,roles )
+values (1,'Pradnya','Password',true, 'ROLE_USER');
+
+INSERT INTO users (id,user_name, password, active,roles )
+values (2,'Admin','Password',true, 'ROLE_ADMIN');
+
